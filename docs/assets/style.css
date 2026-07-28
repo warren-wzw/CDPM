@@ -9,7 +9,7 @@ body{margin:0;color:var(--text);background:var(--bg);font-family:-apple-system,B
 a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 .container{width:min(1120px,calc(100% - 36px));margin:0 auto}
 .container.narrow{width:min(900px,calc(100% - 36px))}
-.section{padding:70px 0}.section.compact{padding:12px 0}.section.tinted{background:var(--soft)}
+.section{padding:40px 0}.section.compact{padding:12px 0}.section.tinted{background:var(--soft)}
 .hero{padding-top:80px;padding-bottom:30px;text-align:center;background:radial-gradient(circle at 20% 0%,rgba(49,87,213,.10),transparent 34%),radial-gradient(circle at 85% 15%,rgba(55,178,170,.10),transparent 30%)}
 h1{max-width:1040px;margin:0 auto 10px;font-size:clamp(2.25rem,5vw,4.4rem);line-height:1.12;letter-spacing:-.045em}
 h2{margin:0 0 24px;text-align:center;font-size:clamp(1.8rem,3vw,2.55rem);letter-spacing:-.025em}
