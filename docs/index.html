@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CDPM: Structure-Aware Dense Matching for Cross-Modal Planar Registration">
+  <title>CDPM | Cross-Modal Planar Registration</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main>
+  <section class="hero section">
+    <div class="container narrow">
+      <h1>Structure-Aware Dense Matching for Cross-Modal Planar Registration</h1>
+      <p class="venue">CDPM</p>
+
+      <div class="authors">
+        <a href="https://warren-wzw.github.io/" target="_blank">Zhiwei Wang</a>
+        <span>Co-author Name</span>
+        <span>Co-author Name</span>
+        <span>Edmund Y. Lam</span>
+      </div>
+
+      <div class="affiliations">
+        <span>University of Hong Kong</span>
+        <span>Zhejiang University of Technology</span>
+      </div>
+
+      <div class="buttons">
+        <a class="button primary" href="#">📄 Paper</a>
+        <a class="button" href="#">⌨ Code</a>
+        <a class="button" href="#">📎 Supplementary</a>
+        <a class="button" href="#">🗂 Dataset</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="container">
+      <img class="main-figure" src="assets/teaser.svg" alt="CDPM teaser figure">
+      <p class="caption">
+        CDPM establishes reliable dense correspondences across modalities and
+        recovers accurate planar transformations under severe appearance differences.
+      </p>
+    </div>
+  </section>
+
+  <section class="section tinted">
+    <div class="container narrow">
+      <h2>TL;DR</h2>
+      <p class="lead">
+        CDPM learns modality-invariant yet spatially discriminative representations
+        for accurate cross-modal planar registration.
+      </p>
+
+      <div class="feature-grid">
+        <article class="card">
+          <h3>Geometry-supervised DINO adaptation</h3>
+          <p>Aligns geometrically corresponding cross-modal patches while preserving transferable semantic structure.</p>
+        </article>
+        <article class="card">
+          <h3>DINO-guided dual-path pyramid</h3>
+          <p>Combines stable DINO correspondences with high-resolution CNN details for precise localization.</p>
+        </article>
+        <article class="card">
+          <h3>Coarse-to-fine dense matching</h3>
+          <p>Progressively refines correspondences and estimates the final homography robustly.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <h2>Abstract</h2>
+      <p class="justified">
+        Cross-modal planar registration is challenging because geometrically corresponding
+        regions may exhibit substantial appearance discrepancies. We present CDPM, a
+        structure-aware dense matching framework that adapts pretrained DINO representations
+        using geometric correspondence supervision, constructs a DINO-guided dual-path
+        feature pyramid, and performs coarse-to-fine correspondence refinement.
+      </p>
+    </div>
+  </section>
+
+  <section class="section tinted">
+    <div class="container">
+      <h2>Method Overview</h2>
+      <img class="main-figure" src="assets/framework.svg" alt="CDPM method overview">
+      <div class="steps">
+        <div><strong>1.</strong> Patch-level cross-modal DINO adaptation</div>
+        <div><strong>2.</strong> Cross-modal dual-path feature pyramid</div>
+        <div><strong>3.</strong> Coarse-to-fine dense correspondence refinement</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Qualitative Results</h2>
+      <div class="result-tabs">
+        <button class="tab active" data-target="rgbt">RGB-T</button>
+        <button class="tab" data-target="googlemap">GoogleMap</button>
+        <button class="tab" data-target="pcb">PCB-Layout</button>
+      </div>
+
+      <div id="rgbt" class="result-panel active">
+        <img class="main-figure" src="assets/result-rgbt.svg" alt="RGB-T qualitative result">
+      </div>
+      <div id="googlemap" class="result-panel">
+        <img class="main-figure" src="assets/result-googlemap.svg" alt="GoogleMap qualitative result">
+      </div>
+      <div id="pcb" class="result-panel">
+        <img class="main-figure" src="assets/result-pcb.svg" alt="PCB-Layout qualitative result">
+      </div>
+    </div>
+  </section>
+
+  <section class="section tinted">
+    <div class="container narrow">
+      <h2>Quantitative Highlights</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Dataset</th><th>Previous best AUC@3</th><th>CDPM AUC@3</th><th>Gain</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>RGB-T</td><td>34.07</td><td><strong>38.30</strong></td><td>+4.23</td></tr>
+            <tr><td>GoogleMap</td><td>51.28</td><td><strong>52.37</strong></td><td>+1.09</td></tr>
+            <tr><td>PCB-Layout</td><td>10.44</td><td><strong>15.61</strong></td><td>+5.17</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <h2>Citation</h2>
+      <div class="code-box">
+        <button id="copyBib" class="copy-button">Copy</button>
+        <pre id="bibtex"><code>@article{wang2026cdpm,
+  title   = {Structure-Aware Dense Matching for Cross-Modal Planar Registration},
+  author  = {Wang, Zhiwei and Others},
+  journal = {Under Review},
+  year    = {2026}
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>CDPM Project Page · Hosted with GitHub Pages.</p>
+    </div>
+  </footer>
+</main>
+<script src="assets/main.js"></script>
+</body>
+</html>
