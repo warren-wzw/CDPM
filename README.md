@@ -1,6 +1,4 @@
-# CDPM
-
-Official repository for **Geometry-Aligned Semantic Matching for Cross-Modal Planar Registration**.
+# Geometry-Aligned Semantic Matching for Cross-Modal Planar Registration.
 
 CDPM establishes dense cross-modal correspondences for accurate planar registration.
 
