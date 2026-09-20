@@ -25,7 +25,7 @@ CDPM combines geometry-aligned DINOv3 features with a DINO-centric feature pyram
 
 ## Generalization
 
-Trained on GoogleMap, CDPM transfers to unseen cross-modal image pairs without fine-tuning.
+Although CDPM is not designed as a general-purpose cross-modal matcher, its architectural design enables it to generalize effectively across diverse cross-modal scenarios.
 
 ![Generalization](./docs/assets/Generalize.png)
 
