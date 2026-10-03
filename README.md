@@ -2,7 +2,7 @@
 
 CDPM establishes dense cross-modal correspondences for accurate planar registration.
 
-[Project Page](https://warren-wzw.github.io/CDPM/) · [Online Demo](https://huggingface.co/spaces/Warren-wzw/CDPM) · [Dataset](#dataset)
+[Project Page](https://warren-wzw.github.io/CDPM/) · [Online Demo](https://huggingface.co/spaces/Warren-wzw/CDPM) · [Dataset](https://huggingface.co/datasets/Warren-wzw/PCB-Layout)
 
 <p align="center">
   <img src="./docs/assets/infogap_354.gif" alt="Registration example 1" width="48%">
