@@ -33,11 +33,11 @@ Although CDPM is not designed as a general cross-modal matcher, its design enabl
 
 **PCB–Layout** pairs real PCB images with design layouts, providing 3,000 training pairs and 500 test pairs with a split by PCB surface.
 
-![PCB–Layout](./docs/assets/Logo.png)
+![PCB–Layout](./docs/assets/Logo_web.jpg)
 
-Download link coming soon.
+Download: [Hugging Face](https://huggingface.co/datasets/Warren-wzw/PCB-Layout)
 
-## Citation
+## BibTeX
 
 If you find CDPM useful, please cite:
 
